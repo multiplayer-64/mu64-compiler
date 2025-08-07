@@ -17,7 +17,7 @@ namespace coop_builder
 
             searchPaths = new string[2];
             searchPaths[0] = cmdlineUtil.workingDir;
-            searchPaths[1] = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\m64-compiler";
+            searchPaths[1] = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\mu64-compiler";
             Directory.CreateDirectory(searchPaths[1]);
 
             foreach (string path in searchPaths)
@@ -91,7 +91,7 @@ namespace coop_builder
 
         public string UpdatedCompilerUrl()
         {
-            return Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\m64-compiler\\m64-compiler-new.exe";
+            return Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\mu64-compiler\\mu64-compiler-new.exe";
         }
     }
 }
