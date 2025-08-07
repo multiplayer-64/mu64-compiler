@@ -13,7 +13,7 @@ namespace coop_builder
         private LogUtil logUtil = null;
         private DirUtil dirUtil = null;
         private BuildUtil buildUtil = null;
-        private string discordUrl = "https://discord.gg/eXhpSRhCyM";
+        private string discordUrl = "https://steamcommunity.com/groups/multiplayer64";
 
         public Form1()
         {
