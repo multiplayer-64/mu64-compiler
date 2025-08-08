@@ -97,7 +97,7 @@ namespace coop_builder
                 }
                 else
                 {
-                    lblFailedDescription.Text = "The build failed during '" + buildUtil.stage + "'\n\nPost the log to the #help-desk channel";
+                    lblFailedDescription.Text = "The build failed during '" + buildUtil.stage + "'\n\nPost the log to the Help channel in the Steam GC";
                     ShowPanel(panelFailed);
                 }
             }
