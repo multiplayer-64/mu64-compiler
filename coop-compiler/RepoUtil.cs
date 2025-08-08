@@ -44,6 +44,6 @@ namespace coop_builder
         public static string intelHdFix64     = "https://github.com/multiplayer-64/mu64-compiler/raw/64-bit/intel-hd/opengl32.dll";
 
         public static string releaseApiUrl   = "https://api.github.com/repos/multiplayer-64/mu64-compiler/releases/latest";
-        public static string releaseExeUrl   = "https://github.com/multiplayer-64/mu64-compiler/releases/latest/download/coop-compiler.exe";
+        public static string releaseExeUrl   = "https://github.com/multiplayer-64/mu64-compiler/releases/latest/download/mu64-compiler.exe";
     }
 }
