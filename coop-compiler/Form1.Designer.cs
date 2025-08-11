@@ -34,9 +34,7 @@ namespace coop_builder
             this.customProgressBar1 = new coop_builder.CustomProgressBar();
             this.panelMain = new System.Windows.Forms.Panel();
             this.btnUpdate = new System.Windows.Forms.Button();
-            this.pctDiscord = new System.Windows.Forms.PictureBox();
             this.btnPlay = new System.Windows.Forms.Button();
-            this.pctLogo = new System.Windows.Forms.PictureBox();
             this.panelRom = new System.Windows.Forms.Panel();
             this.pctRom = new System.Windows.Forms.PictureBox();
             this.lblRomIncorrect = new System.Windows.Forms.Label();
@@ -69,8 +67,6 @@ namespace coop_builder
             this.btnRuntime = new System.Windows.Forms.Button();
             this.panelBuild.SuspendLayout();
             this.panelMain.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pctDiscord)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctLogo)).BeginInit();
             this.panelRom.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctRom)).BeginInit();
             this.panelRomBottom.SuspendLayout();
@@ -128,9 +124,7 @@ namespace coop_builder
             this.panelMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.panelMain.BackgroundImage = global::coop_builder.Properties.Resources.background;
             this.panelMain.Controls.Add(this.btnUpdate);
-            this.panelMain.Controls.Add(this.pctDiscord);
             this.panelMain.Controls.Add(this.btnPlay);
-            this.panelMain.Controls.Add(this.pctLogo);
             this.panelMain.Location = new System.Drawing.Point(8, 8);
             this.panelMain.Margin = new System.Windows.Forms.Padding(0);
             this.panelMain.Name = "panelMain";
@@ -145,7 +139,7 @@ namespace coop_builder
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold);
             this.btnUpdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(25)))), ((int)(((byte)(80)))));
-            this.btnUpdate.Location = new System.Drawing.Point(24, 252);
+            this.btnUpdate.Location = new System.Drawing.Point(28, 127);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(27, 28, 27, 28);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(174, 49);
@@ -153,19 +147,6 @@ namespace coop_builder
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_ClickAsync);
-            // 
-            // pctDiscord
-            // 
-            this.pctDiscord.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.pctDiscord.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pctDiscord.Image = global::coop_builder.Properties.Resources.Discord_Logo_Wordmark_Color2;
-            this.pctDiscord.Location = new System.Drawing.Point(24, 196);
-            this.pctDiscord.Name = "pctDiscord";
-            this.pctDiscord.Size = new System.Drawing.Size(164, 45);
-            this.pctDiscord.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pctDiscord.TabIndex = 6;
-            this.pctDiscord.TabStop = false;
-            this.pctDiscord.Click += new System.EventHandler(this.pctDiscord_Click);
             // 
             // btnPlay
             // 
@@ -175,7 +156,7 @@ namespace coop_builder
             this.btnPlay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPlay.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold);
             this.btnPlay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(0)))));
-            this.btnPlay.Location = new System.Drawing.Point(253, 252);
+            this.btnPlay.Location = new System.Drawing.Point(253, 127);
             this.btnPlay.Margin = new System.Windows.Forms.Padding(27, 28, 27, 28);
             this.btnPlay.Name = "btnPlay";
             this.btnPlay.Size = new System.Drawing.Size(174, 49);
@@ -183,18 +164,6 @@ namespace coop_builder
             this.btnPlay.Text = "Play";
             this.btnPlay.UseVisualStyleBackColor = false;
             this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click);
-            // 
-            // pctLogo
-            // 
-            this.pctLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pctLogo.Image = global::coop_builder.Properties.Resources.logo22;
-            this.pctLogo.Location = new System.Drawing.Point(0, 0);
-            this.pctLogo.Margin = new System.Windows.Forms.Padding(27, 55, 27, 28);
-            this.pctLogo.Name = "pctLogo";
-            this.pctLogo.Size = new System.Drawing.Size(454, 325);
-            this.pctLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pctLogo.TabIndex = 5;
-            this.pctLogo.TabStop = false;
             // 
             // panelRom
             // 
@@ -360,7 +329,7 @@ namespace coop_builder
             this.lblFailedDescription.Name = "lblFailedDescription";
             this.lblFailedDescription.Size = new System.Drawing.Size(454, 135);
             this.lblFailedDescription.TabIndex = 5;
-            this.lblFailedDescription.Text = "The build failed during XXXXXXXXX\r\n\r\nPost the log to the #help-desk channel";
+            this.lblFailedDescription.Text = "The build failed during XXXXXXXXX\r\n\r\nPost the log to the #help channel";
             this.lblFailedDescription.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblFailedHeader
@@ -613,13 +582,10 @@ namespace coop_builder
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panelBuild);
             this.Name = "Form1";
-            this.Text = "coop-compiler";
+            this.Text = "mu64-compiler";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panelBuild.ResumeLayout(false);
             this.panelMain.ResumeLayout(false);
-            this.panelMain.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pctDiscord)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctLogo)).EndInit();
             this.panelRom.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pctRom)).EndInit();
             this.panelRomBottom.ResumeLayout(false);
@@ -640,7 +606,6 @@ namespace coop_builder
         private System.Windows.Forms.Panel panelBuild;
         private System.Windows.Forms.RichTextBox rtbOutput;
         private System.Windows.Forms.Panel panelMain;
-        private System.Windows.Forms.PictureBox pctLogo;
         private System.Windows.Forms.Button btnPlay;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Panel panelRom;
@@ -652,11 +617,9 @@ namespace coop_builder
         private System.Windows.Forms.Label lblSuccessDescription;
         private System.Windows.Forms.Label lblSuccessTitle;
         private System.Windows.Forms.Panel panelFailed;
-        private System.Windows.Forms.Button btnFailedDiscord;
         private System.Windows.Forms.Label lblFailedDescription;
         private System.Windows.Forms.Label lblFailedHeader;
         private System.Windows.Forms.Button btnFailedSaveLog;
-        private System.Windows.Forms.PictureBox pctDiscord;
         private System.Windows.Forms.PictureBox pctRom;
         private CustomProgressBar customProgressBar1;
         private System.Windows.Forms.Panel panelSuccessBottom;
@@ -675,6 +638,7 @@ namespace coop_builder
         private System.Windows.Forms.Label lblRuntimeTitle;
         private System.Windows.Forms.Panel panelRuntimeBottom;
         private System.Windows.Forms.Button btnRuntime;
+        private System.Windows.Forms.Button btnFailedDiscord;
     }
 }
 

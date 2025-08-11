@@ -13,7 +13,7 @@ namespace coop_builder
         private LogUtil logUtil = null;
         private DirUtil dirUtil = null;
         private BuildUtil buildUtil = null;
-        private string discordUrl = "https://discord.gg/eXhpSRhCyM";
+        private string discordUrl = "https://discord.gg/UGBugyPkwd";
 
         public Form1()
         {
@@ -97,7 +97,7 @@ namespace coop_builder
                 }
                 else
                 {
-                    lblFailedDescription.Text = "The build failed during '" + buildUtil.stage + "'\n\nPost the log to the #help-desk channel";
+                    lblFailedDescription.Text = "The build failed during '" + buildUtil.stage + "'\n\nPost the log to the #help channel";
                     ShowPanel(panelFailed);
                 }
             }

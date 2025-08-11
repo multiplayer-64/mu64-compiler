@@ -32,18 +32,18 @@ namespace coop_builder
             }
         }
 
-        public static Repo game = new Repo("djoslin0", "sm64ex-coop", "coop");
+        public static Repo game = new Repo("multiplayer-64", "multiplayer64", "main");
 
-        public static string tmpEnvironment32 = "coop-compiler-32-bit";
-        public static string tmpEnvironment64 = "coop-compiler-64-bit";
+        public static string tmpEnvironment32 = "mu64-compiler-32-bit";
+        public static string tmpEnvironment64 = "mu64-compiler-64-bit";
 
-        public static string environmentUrl32 = "https://github.com/coop-compiler/coop-compiler/archive/refs/heads/32-bit.zip";
-        public static string environmentUrl64 = "https://github.com/coop-compiler/coop-compiler/archive/refs/heads/64-bit.zip";
+        public static string environmentUrl32 = "https://github.com/multiplayer-64/mu64-compiler/archive/refs/heads/32-bit.zip";
+        public static string environmentUrl64 = "https://github.com/multiplayer-64/mu64-compiler/archive/refs/heads/64-bit.zip";
 
-        public static string intelHdFix32     = "https://github.com/coop-compiler/coop-compiler/raw/32-bit/intel-hd/opengl32.dll";
-        public static string intelHdFix64     = "https://github.com/coop-compiler/coop-compiler/raw/64-bit/intel-hd/opengl32.dll";
+        public static string intelHdFix32     = "https://github.com/multiplayer-64/mu64-compiler/raw/32-bit/intel-hd/opengl32.dll";
+        public static string intelHdFix64     = "https://github.com/multiplayer-64/mu64-compiler/raw/64-bit/intel-hd/opengl32.dll";
 
-        public static string releaseApiUrl   = "https://api.github.com/repos/coop-compiler/coop-compiler/releases/latest";
-        public static string releaseExeUrl   = "https://github.com/coop-compiler/coop-compiler/releases/latest/download/coop-compiler.exe";
+        public static string releaseApiUrl   = "https://api.github.com/repos/multiplayer-64/mu64-compiler/releases/latest";
+        public static string releaseExeUrl   = "https://github.com/multiplayer-64/mu64-compiler/releases/latest/download/mu64-compiler.exe";
     }
 }

@@ -242,7 +242,7 @@ namespace coop_builder
 
                 // cleanup old files
                 SetStage("cleanup old files");
-                string binDir = dirUtil.WritePathNear("sm64ex-coop");
+                string binDir = dirUtil.WritePathNear("multiplayer64");
                 string downloadsDir = dirUtil.WritePath("downloads");
                 string environmentDir = dirUtil.WritePath("environment");
                 string tmpDir = dirUtil.WritePath("tmp");

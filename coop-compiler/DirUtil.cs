@@ -17,7 +17,7 @@ namespace coop_builder
 
             searchPaths = new string[2];
             searchPaths[0] = cmdlineUtil.workingDir;
-            searchPaths[1] = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\coop-compiler";
+            searchPaths[1] = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\mu64-compiler";
             Directory.CreateDirectory(searchPaths[1]);
 
             foreach (string path in searchPaths)
@@ -55,7 +55,7 @@ namespace coop_builder
 
         public void FindFiles()
         {
-            exePath = FindFile("sm64ex-coop\\sm64.us.f3dex2e.exe");
+            exePath = FindFile("multiplayer64\\sm64.us.f3dex2e.exe");
             romPath = FindFile("rom\\baserom.us.z64");
             if (romPath != null && !MiscUtil.ValidRom(romPath))
             {
@@ -91,7 +91,7 @@ namespace coop_builder
 
         public string UpdatedCompilerUrl()
         {
-            return Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\coop-compiler\\coop-compiler-new.exe";
+            return Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\mu64-compiler\\mu64-compiler-new.exe";
         }
     }
 }
