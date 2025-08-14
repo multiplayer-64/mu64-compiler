@@ -13,7 +13,7 @@ namespace coop_builder
         private LogUtil logUtil = null;
         private DirUtil dirUtil = null;
         private BuildUtil buildUtil = null;
-        private string discordUrl = "https://discord.gg/UGBugyPkwd";
+        private string discordUrl = "https://discord.gg/R5sWpxYjqe";
 
         public Form1()
         {
